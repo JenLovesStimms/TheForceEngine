@@ -2620,7 +2620,7 @@ namespace TFE_FrontEndUI
 			ImGui::SliderFloat4("Color###ReticleColor", &graphics->reticleRed, 0.0f, 1.0f);
 
 			s32 scale = s32(graphics->reticleScale * 4.0f + 0.5f);
-			ImGui::SliderInt("Scale###ReticleScale", &scale, 1, 8);
+			ImGui::SliderFloat("Scale###ReticleScale", &scale, 1.0f, 8.0f);
 			graphics->reticleScale = f32(scale) * 0.25f;
 
 			reticle_setShape(graphics->reticleIndex);
